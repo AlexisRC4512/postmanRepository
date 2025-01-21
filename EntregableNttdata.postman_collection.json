@@ -1,0 +1,504 @@
+{
+	"info": {
+		"_postman_id": "98e56f8f-a937-44d3-851c-4657cb9967e1",
+		"name": "EntregableNttdata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21757038"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"alexis\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"alexis\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll client",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk3MTcxLCJleHAiOjE3Mzc0OTczNTF9.kPZKpfjumyEuzx-JWC3g--4TUBcF-AN76BB3nCQRoBRpb8yLD9RedDHxZVKpVKArroiQYJmMlZlXWYps-mkcpA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk2NDY5LCJleHAiOjE3Mzc0OTY2NDl9.xRmaLJZScdZI3RNdCRS4Ft-7DKmyvjM4Nvb-qSgxJMcesDH_6cdn3hU_2fuBhvCKuh3ghW-F-4bmZAf-FtcwZQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Rias\",\r\n  \"type\": \"personal\", \r\n  \"documentNumber\": 123456782,\r\n  \"address\": \"1234 Elm Street\",\r\n  \"phone\": \"555-1234\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"subTypeClient\": \"normal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Id Client",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk2NzUxLCJleHAiOjE3Mzc0OTY5MzF9.5yqjAVOU92mDjwEvth3JZyQQ6U3Ts-9GIYr9j0hcJZaa703KTCv28u-W3NXPy6jdmnLPN0ONc8Nlcr2ceFJ1BQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/client/05da0e7d-985c-48f2-883e-187a8820b730",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"05da0e7d-985c-48f2-883e-187a8820b730"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Client",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk2ODYzLCJleHAiOjE3Mzc0OTcwNDN9.ifg0SFLnVRjv-0Xk70EJpFcdrW-C0VZhCMf7HGJ_hwTQaZX3B7xD9mlRmi7eIOpGvXiDx2cSA8X10fKQHSr4mw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John Doez\",\n    \"type\": \"PERSONAL\",\n    \"documentNumber\": 123456789,\n    \"address\": \"1234 Elm Street\",\n    \"phone\": \"555-1234\",\n    \"email\": \"johndoe@example.com\",\n    \"subTypeClient\": \"NORMAL\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/client/05da0e7d-985c-48f2-883e-187a8820b730",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"05da0e7d-985c-48f2-883e-187a8820b730"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Client",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/client/05da0e7d-985c-48f2-883e-187a8820b730?Authorization=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk2ODYzLCJleHAiOjE3Mzc0OTcwNDN9.ifg0SFLnVRjv-0Xk70EJpFcdrW-C0VZhCMf7HGJ_hwTQaZX3B7xD9mlRmi7eIOpGvXiDx2cSA8X10fKQHSr4mw",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"05da0e7d-985c-48f2-883e-187a8820b730"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk2ODYzLCJleHAiOjE3Mzc0OTcwNDN9.ifg0SFLnVRjv-0Xk70EJpFcdrW-C0VZhCMf7HGJ_hwTQaZX3B7xD9mlRmi7eIOpGvXiDx2cSA8X10fKQHSr4mw"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Credit",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk3MDI4LCJleHAiOjE3Mzc0OTcyMDh9.vYJ92w-Y5JZEw5Hvr1RO33dHP8lT_Ww9chPyGfmElVliFqn0lxf5sVfkSW5j0WhlUCdFrVYvyDiCHT1Z9bVwVw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/credit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Credit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk3MjE2LCJleHAiOjE3Mzc0OTczOTZ9.uSZYcPRUBdTesyut-3jHuA7Eaa-LDCV762KGvNu_Ts9GNEvn3_pO16Tt6C3kwxe9nvoJUugJp5jvsNMhjPUdmA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"type\": \"PERSONAL\",\r\n    \"amount\": 11020.0,\r\n    \"interestRate\": 5.5,\r\n    \"startDate\": \"2024-01-01T00:00:00Z\",\r\n    \"endDate\": \"2025-01-01T00:00:00Z\",\r\n    \"outstandingBalance\": 5000.0,\r\n    \"clientId\": \"5421c14f-f011-4d1b-b599-c0914b2797bb\",\r\n    \"payments\": [\r\n        {\r\n            \"amount\": 1000.0,\r\n            \"date\": \"2024-02-01T00:00:00Z\",\r\n            \"description\": \"First payment\"\r\n        },\r\n        {\r\n            \"amount\": 1000.0,\r\n            \"date\": \"2024-03-01T00:00:00Z\",\r\n            \"description\": \"Second payment\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/credit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credit By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk3MjE2LCJleHAiOjE3Mzc0OTczOTZ9.uSZYcPRUBdTesyut-3jHuA7Eaa-LDCV762KGvNu_Ts9GNEvn3_pO16Tt6C3kwxe9nvoJUugJp5jvsNMhjPUdmA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/credit/98c1af0a-9051-4798-b112-dbaf633e0c11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit",
+						"98c1af0a-9051-4798-b112-dbaf633e0c11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update credit by id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk3NzYzLCJleHAiOjE3Mzc0OTc5NDN9.NFaeVRFBJTcN7Dn_CaqDzFOmJfBdAZRO3HjSKAyK9uKa22940_gjSJKHDjZ8emE3AQHyny210nyI5ITMHs_w1Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"PERSONAL\",\n    \"amount\": 110231.0,\n    \"interestRate\": 5.5,\n    \"startDate\": \"2024-01-01T00:00:00.000+00:00\",\n    \"endDate\": \"2025-01-01T00:00:00.000+00:00\",\n    \"outstandingBalance\": 5000.0,\n    \"clientId\": \"5421c14f-f011-4d1b-b599-c0914b2797bb\",\n    \"payments\": [\n        {\n            \"amount\": 1000.0,\n            \"date\": \"2024-02-01T00:00:00.000+00:00\",\n            \"description\": \"First payment\"\n        },\n        {\n            \"amount\": 1000.0,\n            \"date\": \"2024-03-01T00:00:00.000+00:00\",\n            \"description\": \"Second payment\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/credit/98c1af0a-9051-4798-b112-dbaf633e0c11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit",
+						"98c1af0a-9051-4798-b112-dbaf633e0c11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Credit",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk3ODkzLCJleHAiOjE3Mzc0OTgwNzN9.Z5nr3oNTrcFReKjbo1B4Xk6mapCdlh6XSvm48x_oRL53HBzpkn1l8sfTksfxxEUO8M05MvqIN8p7MuVNNJvk6w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/credit/98c1af0a-9051-4798-b112-dbaf633e0c11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit",
+						"98c1af0a-9051-4798-b112-dbaf633e0c11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all creditCard",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk4MDAwLCJleHAiOjE3Mzc0OTgxODB9.Xj58TeagvQJLhsOcqQgIf3svQbfYtrS-VW99xUhQpesSO92vBNlhs6fFIiFVoRR4YY9XJ-wAXKS2en6uhiA3fg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create CreditCard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk4MTIzLCJleHAiOjE3Mzc0OTgzMDN9.TOohdj0Ec9mMxwY1vv_Ff4SZ1RnCyJvjMyidpqn3NKxI-BnmcWWFwb4eEvymXEDltmYz65TQKoebpaqG6qorOA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"type\": \"BUSINESS\",\r\n  \"creditLimit\": 10000.00,\r\n  \"availableBalance\": 8000.00,\r\n  \"issueDate\": \"2022-06-15T00:00:00Z\",\r\n  \"expirationDate\": \"2027-06-15T00:00:00Z\",\r\n  \"clientId\": \"05da0e7d-985c-48f2-883e-187a8820b730\",\r\n  \"transactions\": [\r\n    {\r\n      \"type\": \"PURCHASE\",\r\n      \"amount\": 120.50,\r\n      \"date\": \"2024-12-01T14:30:00Z\",\r\n      \"description\": \"Office supplies purchase\"\r\n    },\r\n    {\r\n      \"type\": \"PAYMENT\",\r\n      \"amount\": 500.00,\r\n      \"date\": \"2025-01-10T10:00:00Z\",\r\n      \"description\": \"Monthly credit payment\"\r\n    },\r\n    {\r\n      \"type\": \"PURCHASE\",\r\n      \"amount\": 300.00,\r\n      \"date\": \"2024-11-20T16:45:00Z\",\r\n      \"description\": \"Travel expenses\"\r\n    }\r\n  ],\r\n  \"numberCreditCard\": 987654321\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credit Card By Id ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk5MDk4LCJleHAiOjE3Mzc0OTkyNzh9.ofXfc6AbMmP5wNKM82rNo2hpZERm6nX03OCg5c5_r1bqYUAxsF-sh5I73edMBGqq09l9Uoi4C9qtmq0dSnJRsg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard/35b9235c-4eed-4944-ad17-dba133aa8ae1?=",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard",
+						"35b9235c-4eed-4944-ad17-dba133aa8ae1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Credit Card",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk5MzI1LCJleHAiOjE3Mzc0OTk1MDV9.NdWW-IIbu2FSP8c8kBhQ-8GgVztB1iVNE0eoy5YWNM8WZjg37NMTBnlOtfOI7iWjWxRmxL07tf_LsqKDQYAmww",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"BUSINESS\",\n    \"creditLimit\": 100002.0,\n    \"availableBalance\": 8000.0,\n    \"issueDate\": \"2022-06-15T00:00:00.000+00:00\",\n    \"expirationDate\": \"2027-06-15T00:00:00.000+00:00\",\n    \"clientId\": \"05da0e7d-985c-48f2-883e-187a8820b730\",\n    \"transactions\": [\n        {\n            \"type\": \"PURCHASE\",\n            \"amount\": 120.5,\n            \"date\": \"2024-12-01T14:30:00.000+00:00\",\n            \"description\": \"Office supplies purchase\"\n        },\n        {\n            \"type\": \"PAYMENT\",\n            \"amount\": 500.0,\n            \"date\": \"2025-01-10T10:00:00.000+00:00\",\n            \"description\": \"Monthly credit payment\"\n        },\n        {\n            \"type\": \"PURCHASE\",\n            \"amount\": 300.0,\n            \"date\": \"2024-11-20T16:45:00.000+00:00\",\n            \"description\": \"Travel expenses\"\n        }\n    ],\n    \"numberCreditCard\": 123441256\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard/35b9235c-4eed-4944-ad17-dba133aa8ae1?=",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard",
+						"35b9235c-4eed-4944-ad17-dba133aa8ae1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
