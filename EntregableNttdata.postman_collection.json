@@ -275,6 +275,41 @@
 			"response": []
 		},
 		{
+			"name": "Get Pays By CreditId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTAyNzEyLCJleHAiOjE3Mzc1MDI4OTJ9.fNsy7S2eetiwUgVfOI3WlWm0J_h6_xXHnoFyPCuSoyTkvLvfPsyW8umxfUj-9ku_OftNTBK6JPayM24Rzfab8A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/credit/05da0e7d-985c-48f2-883e-187a8820b730/payments",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit",
+						"05da0e7d-985c-48f2-883e-187a8820b730",
+						"payments"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Credit By Id",
 			"request": {
 				"method": "GET",
@@ -296,6 +331,34 @@
 						"v1",
 						"credit",
 						"98c1af0a-9051-4798-b112-dbaf633e0c11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credit By Client Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTAzMjk3LCJleHAiOjE3Mzc1MDM0Nzd9.txGmOV6UgibQNFv-JgstRmsQvZcIkd1FMd1e95XjarC_OLa1rSscAiF6D_tqKJ5cR3HWTukYufJONcc90tMgFw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/credit/client/05da0e7d-985c-48f2-883e-187a8820b730",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit",
+						"client",
+						"05da0e7d-985c-48f2-883e-187a8820b730"
 					]
 				}
 			},
@@ -359,6 +422,34 @@
 						"v1",
 						"credit",
 						"98c1af0a-9051-4798-b112-dbaf633e0c11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credit Balance by Client ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTAzNDE3LCJleHAiOjE3Mzc1MDM1OTd9.KwDgi02FFux4s45UMy2F3IcOtFzUlvcB5mQslrFvMswnXKsB5W7GXLGb1onZnsABzb525dSZM8f9N6ADZVmmgw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/credit/05da0e7d-985c-48f2-883e-187a8820b730/balances",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit",
+						"05da0e7d-985c-48f2-883e-187a8820b730",
+						"balances"
 					]
 				}
 			},
@@ -494,6 +585,1312 @@
 						{
 							"key": "",
 							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Credit Card",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NDk5NzM4LCJleHAiOjE3Mzc0OTk5MTh9.QmN2q2t3JRQHtHtIlJ4Nbxe5Po8TF0fOPMmQ0tbDweeaLxz-THVkDPxT43zg-Hx2vzl3yOED3SgRChM5DZLKdA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard/35b9235c-4eed-4944-ad17-dba133aa8ae1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard",
+						"35b9235c-4eed-4944-ad17-dba133aa8ae1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "charge CreditCard by CreditCardId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTAzODU0LCJleHAiOjE3Mzc1MDQwMzR9.mKQWLcRQsb7ifs1IOwQFtYV1Z7sZfdgwMSQ52JPW1ccG0no9nStUka79v0kPMOQW7X7lV7v8oWycwiI4HdCUzA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"amount\": 100.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard/dc7cf179-462a-4c1f-b6ac-a2d240aa614b/charge",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard",
+						"dc7cf179-462a-4c1f-b6ac-a2d240aa614b",
+						"charge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credit Card Balances by Client Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA0NjQ0LCJleHAiOjE3Mzc1MDQ4MjR9.G6ZeYeALuMdO4txM3tJd2e0ucOdgDM4SIvf1a68PNNoym-qFBn23e6H0jfkhq1cltmBIMKCGMYdxeF24CF-VRg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard/05da0e7d-985c-48f2-883e-187a8820b730/balances",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard",
+						"05da0e7d-985c-48f2-883e-187a8820b730",
+						"balances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creditcard payment by Credit CardId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTAzOTkwLCJleHAiOjE3Mzc1MDQxNzB9.qoqC_CHN1NIITUK-VvF7eY_J80RUWeaWOmZQr8jNosIkpSDbdeUZ796TTyAgeZqD0YhWALM1MVniKHhbD2A2PA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"amount\": 100.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard/dc7cf179-462a-4c1f-b6ac-a2d240aa614b/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard",
+						"dc7cf179-462a-4c1f-b6ac-a2d240aa614b",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Credit card transactions By CreditCard Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA0OTAwLCJleHAiOjE3Mzc1MDUwODB9.TWS_R9iYWwWKt1riNe4DyyRLgJuggtL3Ev8UpmBBEByuCYm6h5lkQZOEtvH6ckpB_vvenQlJivXH1_xVy9QhRQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard/ba1efebe-9370-4d6b-9d00-cdeafed2adb3/transactions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard",
+						"ba1efebe-9370-4d6b-9d00-cdeafed2adb3",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Credit Card by Client Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA1MDg0LCJleHAiOjE3Mzc1MDUyNjR9.k0e00UEKivw7Cz-RUoJ7oiLFmzk0DutPr9L_-elkp9mce50IIpg5QFT0Eq2ajixSSK0w1E8-AzsIHYK24mc44Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/CreditCard/05da0e7d-985c-48f2-883e-187a8820b730/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"CreditCard",
+						"05da0e7d-985c-48f2-883e-187a8820b730",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Bank account",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTEwMzIwLCJleHAiOjE3Mzc1MTA1MDB9.3oXqDUkvj_B7y8i4qQmcuexJhNUq8f-FhiKWqA6KOfg7Vki1Hqw8UjueZb2Hwwdx6CVG-gk9gjp5OIpFSI7qqQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTAwODYzLCJleHAiOjE3Mzc1MDEwNDN9.3iYgEzHFeQ9TFWF2V3BwGO_0Bac-GIpgTmKf2ziXFcMcl29hrm8xzFM3yOLBMLeGuS6GPPeKXHpwxrw4TS3_Pg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"type\": \"SAVINGS\",\n  \"balance\": 1500.50,\n  \"openingDate\": \"2023-01-15\",\n  \"clientId\": \"5421c14f-f011-4d1b-b599-c0914b2797bb\",\n  \"holders\": [\n    \"5421c14f-f011-4d1b-b599-c0914b2797bb\"\n  ],\n  \"authorizedSigners\": [\n    \"5421c14f-f011-4d1b-b599-c0914b2797bb\"\n  ],\n  \"numberAccount\": 1234567451,\n  \"transactionCount\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTAwOTYwLCJleHAiOjE3Mzc1MDExNDB9.Seo2qJRkymqxiYj04Ojd_R677dJyta6VAk12qzdAHF5V3TUazw5AaJOoLdKO3ixXOuFsEG_mngSTFSdPGNDZ_A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/account/c847e308-0f67-48a4-9cb7-6d4d0ecbd875",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"c847e308-0f67-48a4-9cb7-6d4d0ecbd875"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTAxMTg2LCJleHAiOjE3Mzc1MDEzNjZ9.uK2m0I2v3slmvVroTM11rpFBwIt_ICFFrt0bSOf5fdF6HE9XpuVa95qUQ3qN0YhP5qfZ3mk23gsF-_YFaMQgDg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"SAVINGS\",\n    \"balance\": 1505.0,\n    \"openingDate\": \"2025-01-21T19:04:55.199+00:00\",\n    \"transactionLimit\": 10.0,\n    \"maintenanceFee\": 0.0,\n    \"clientId\": \"05da0e7d-985c-48f2-883e-187a8820b730\",\n    \"holders\": [\n        \"05da0e7d-985c-48f2-883e-187a8820b730\"\n    ],\n    \"authorizedSigners\": [\n        \"05da0e7d-985c-48f2-883e-187a8820b730\"\n    ],\n    \"transactions\": null,\n    \"numberAccount\": 1234567890,\n    \"transactionCount\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/account/c847e308-0f67-48a4-9cb7-6d4d0ecbd875",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"c847e308-0f67-48a4-9cb7-6d4d0ecbd875"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account withdraw",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA1MjkzLCJleHAiOjE3Mzc1MDU0NzN9.vvOod7j36oj87SdCAJ79KhMpD443wdNMaKoweP9wUZ58fNlx7PmRAswJvinOivYy_ia2gLhXXxzaTVteZfInrw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"amount\": 50.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/account/5d0e0676-5326-44a7-84de-76ab07b5c70d/withdraw",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"5d0e0676-5326-44a7-84de-76ab07b5c70d",
+						"withdraw"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account deposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA1NTU2LCJleHAiOjE3Mzc1MDU3MzZ9.EqjeMykVpql3ZI5p0AUtVfUidoFxvCaELPVh8yWFtcdQvQ8UNmYGaieMusV4RFArA6EbqbjUgkkA8u8heHBg-g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"amount\": 50.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/account/5d0e0676-5326-44a7-84de-76ab07b5c70d/deposit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"5d0e0676-5326-44a7-84de-76ab07b5c70d",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account balances By Account Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA1NjkwLCJleHAiOjE3Mzc1MDU4NzB9.tRWb_qXvbjZECq5xl_VSHEgZbHBv3GSOFlir-6y6LfC-AxasZgTNNvO6D6AYhAb2uFwwN2oGROj-NiA1l7z8hQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/account/5421c14f-f011-4d1b-b599-c0914b2797bb/balances",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"5421c14f-f011-4d1b-b599-c0914b2797bb",
+						"balances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account transactions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA1ODc2LCJleHAiOjE3Mzc1MDYwNTZ9.9cwOZUt6XSENDvAwRVM1F7jbY3-KhhHJtuTyQN1ZhZNz8w8TBZFgRh-kcwoAsq95zMLx4OuRFKds21IcJkLWCQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/account/5d0e0676-5326-44a7-84de-76ab07b5c70d/transactions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"5d0e0676-5326-44a7-84de-76ab07b5c70d",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfer by number account internal ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA2NDk0LCJleHAiOjE3Mzc1MDY2NzR9.NGL66kDCpQoiz597AoQRFkxivLFAE1oJ54r2QXkPdpsbr-gRjKrYamJQFBgpJ0zfdxezKowMPD3zD6LPbjfhmQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fromAccountNumber\": \"1234567475\",\n  \"toAccountNumber\": \"1234567451\",\n  \"amount\": 150.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/account/internal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"internal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "external transaction by Account Number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA2ODAzLCJleHAiOjE3Mzc1MDY5ODN9.2Z5gJUkdlmGqgV5NbnwYvbdDra7goC3Md97JTXoIps9km1JBkQJhqlz88CgYqFefDtfqUlXh8zyDt85tJmncnQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fromAccountNumber\": \"1234567441\",\n  \"toAccountNumber\": \"1234567475\",\n  \"amount\": 150.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/account/external",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"external"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Comissions  by Account Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA3MTA5LCJleHAiOjE3Mzc1MDcyODl9.muxjefkjt3-sUU6Mci-AfoueMf19O15lRt9IAQY0w0dsgqPPqXjTloOGLwOinq71JlQ9fxLT2Wji_uBcSEl7jQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/account/541f2c0d-8566-4521-8a79-66c254634063/commissions?startDate=2025-01-01&endDate=2025-01-21",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"541f2c0d-8566-4521-8a79-66c254634063",
+						"commissions"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2025-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2025-01-21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Account by Client ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA3MzQxLCJleHAiOjE3Mzc1MDc1MjF9.Zj6qKfnSaHonLSuIysmS4scoAIjJHnlWPgJGbDiIeIcR_13N9eCnWgtUj3rzt_7NDomaGKilDLShStYp9idlsA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/account/client/5421c14f-f011-4d1b-b599-c0914b2797bb",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"account",
+						"client",
+						"5421c14f-f011-4d1b-b599-c0914b2797bb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Report by Client ID client-summary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA3ODg2LCJleHAiOjE3Mzc1MDgwNjZ9.BwIKuuXgDfLtp1WRhv-py2148u4aEBkeEFPkdnUuud_gsdNIIDacS8yMgNaLazYojcWNV8RHqkMFE87ORxDjYw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/report/client-summary/5421c14f-f011-4d1b-b599-c0914b2797bb",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"report",
+						"client-summary",
+						"5421c14f-f011-4d1b-b599-c0914b2797bb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report balances by Client ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA4MTc3LCJleHAiOjE3Mzc1MDgzNTd9.WZi6wg6NGOEJU7q3M9n5j2Sz25U8C-GEsIDIRh1qUiuazV_mQREM3mpYiTwxz2yOQpqY8erlKhot_oeOrS1TaQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/report/balances/5421c14f-f011-4d1b-b599-c0914b2797bb",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"report",
+						"balances",
+						"5421c14f-f011-4d1b-b599-c0914b2797bb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comission By AccountId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA4Mjc2LCJleHAiOjE3Mzc1MDg0NTZ9.6zA_PlhQNBxOxmadtSwXLppPOIzzuFGcsIKz0NkC3weTEo_fuN4NlAQzpkEHTgWhgUDKvEDDtOQLfNoQxrF9XQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/report/5d0e0676-5326-44a7-84de-76ab07b5c70d/commissions?startDate=2025-01-01&endDate=2025-01-21",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"report",
+						"5d0e0676-5326-44a7-84de-76ab07b5c70d",
+						"commissions"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2025-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2025-01-21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ger All Debit Card",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA5MzA3LCJleHAiOjE3Mzc1MDk0ODd9.5gdlhWxVMhnOKXQrZ5kjaEF4M-qSowQPBzYJr9Fq8WKPsDbJ0tn1hwJwsNmrWUgqThiI3xttVD0qeTXzxHEXQw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/debitcard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"debitcard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Debit Card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA5NTA5LCJleHAiOjE3Mzc1MDk2ODl9.ZNby1mNw51e0UEDDZ_1s7ZDGyhc8luT1wCx10APv1Kx7KVvSaxmEIjFA6hYPd34BExwVlkfioky8mG2zAYl6sA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"numberDebitCard\": \"123456782\",\n  \"principalAccountId\": \"a5f80251-763c-4e36-8e75-e50a23b16968\",\n  \"accounts\": [\"a5f80251-763c-4e36-8e75-e50a23b16968\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/debitcard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"debitcard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Debit Card By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA5NjQwLCJleHAiOjE3Mzc1MDk4MjB9.lOAHouGG6IpUGEBv7U97ggKdVDEnVoprtQe1xttx4rsmujCdQfu6l93QkSpFPL7cAXsBjDkfooxDjIzvOZ963Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/debitcard/30b65bd7-d6f6-41f9-b95b-90ca1e1cc735",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"debitcard",
+						"30b65bd7-d6f6-41f9-b95b-90ca1e1cc735"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Debit Card",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA5NzQyLCJleHAiOjE3Mzc1MDk5MjJ9.GIeyO8zpCQMdIHBjAjeCW3WomioEtssUw5hZ76TgKbbR-nP5uqVtHbYVE_Q_dMn-MnsJXVprS8As4BKjdWpqAw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"numberDebitCard\": \"123456783\",\n        \"principalAccountId\": \"0ce588f2-6929-48b6-a508-3db35527717a\",\n        \"accounts\": [\n            \"0ce588f2-6929-48b6-a508-3db35527717a\"\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/debitcard/30b65bd7-d6f6-41f9-b95b-90ca1e1cc735",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"debitcard",
+						"30b65bd7-d6f6-41f9-b95b-90ca1e1cc735"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Debit Card",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTA5NzQyLCJleHAiOjE3Mzc1MDk5MjJ9.GIeyO8zpCQMdIHBjAjeCW3WomioEtssUw5hZ76TgKbbR-nP5uqVtHbYVE_Q_dMn-MnsJXVprS8As4BKjdWpqAw",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/debitcard/30b65bd7-d6f6-41f9-b95b-90ca1e1cc735",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"debitcard",
+						"30b65bd7-d6f6-41f9-b95b-90ca1e1cc735"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdraw Debit card By Id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTEwMzIwLCJleHAiOjE3Mzc1MTA1MDB9.3oXqDUkvj_B7y8i4qQmcuexJhNUq8f-FhiKWqA6KOfg7Vki1Hqw8UjueZb2Hwwdx6CVG-gk9gjp5OIpFSI7qqQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"amount\": 100.50\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/debitcard/e49e9beb-48ec-458b-98da-43a1624c6bc6/withdraw",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"debitcard",
+						"e49e9beb-48ec-458b-98da-43a1624c6bc6",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Balance by AccountId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTEwMzIwLCJleHAiOjE3Mzc1MTA1MDB9.3oXqDUkvj_B7y8i4qQmcuexJhNUq8f-FhiKWqA6KOfg7Vki1Hqw8UjueZb2Hwwdx6CVG-gk9gjp5OIpFSI7qqQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/debitcard/0ce588f2-6929-48b6-a508-3db35527717a/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"debitcard",
+						"0ce588f2-6929-48b6-a508-3db35527717a",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Purse",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTEwNzg4LCJleHAiOjE3Mzc1MTA5Njh9.hI8QQOk9SFdonXknfvTaebp4wz6X2zcKCrv8PHNYEfy0el_PNMcaMIEd3ZafyVA3CzA5pn3IEBR7qW1c4u-_qQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"documentType\": \"DNI\", \n  \"documentNumber\": 12345678,\n  \"email\": \"example@test.com\",\n  \"phoneNumber\": \"999999999\",\n  \"imeiPhone\": 123456789,\n  \"associateDebitCard\": true,\n  \"debitCardNumber\": \"e49e9beb-48ec-458b-98da-43a1624c6bc6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Purses",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTEwODgwLCJleHAiOjE3Mzc1MTEwNjB9.7b3LffQEDGsYxfZ-IoV6tj32pDYJI7d-4-TdBYuRRkbuyf0iU1Ce4GFNnVjVdwwevfSGwUsnA47___-5yqMTTg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purses?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purses"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Purse",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTExMzE5LCJleHAiOjE3Mzc1MTE0OTl9.3w3Wv8emJvtQ_WBGFeuRFgqdGBKgCL5TrbF6eq2PtIA4p5sY-j3Aq9gmMwSRnLHY63WgvadmRkeoDVjm_SOHUg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"documentType\": \"DNI\",\n        \"documentNumber\": 12345678,\n        \"email\": \"example@tes2t.com\",\n        \"phoneNumber\": \"999999999\",\n        \"imeiPhone\": 123456789,\n        \"associateDebitCard\": true,\n        \"balance\": 0.0,\n        \"debitCardNumber\": \"e49e9beb-48ec-458b-98da-43a1624c6bc6\",\n        \"payments\": null\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purses/95eff31b-84a9-4712-8350-2a321f01d5b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purses",
+						"95eff31b-84a9-4712-8350-2a321f01d5b4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Purses",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTExMzk1LCJleHAiOjE3Mzc1MTE1NzV9.Qx911K_aSOfJIsjxpMT6et6Xm2dRlldn91H0yClzGP13rjjm2brw_WD1LmqN4qUQlsiznG9CEqocKZ6PM5X6kg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purses/95eff31b-84a9-4712-8350-2a321f01d5b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purses",
+						"95eff31b-84a9-4712-8350-2a321f01d5b4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pay Purse",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTE2NTYwLCJleHAiOjE3Mzc1MTY3NDB9.b-xduE_H5gWM-V69NG_CXH5jyK5qFNRGHCZgriKmO-lnb1TPqrg0_kpb--vcFO4Qdz_NvDM43OywKP8RmefbjQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"amount\": 100.50,\n  \"state\": \"INITIAL\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purses/ecb88755-f802-4cc2-bfd1-fd3c0a25fcdb/payByCreditId?numberPhone=999999999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purses",
+						"ecb88755-f802-4cc2-bfd1-fd3c0a25fcdb",
+						"payByCreditId"
+					],
+					"query": [
+						{
+							"key": "numberPhone",
+							"value": "999999999"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all purse-bootcoin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTE2OTU1LCJleHAiOjE3Mzc1MTcxMzV9.FxngvuAeB4CTJWo4--o0_kK8Yoe2XOJb7jnAF_WF8lFABdPXRB3jirDXu5DsFSbTJIFhQtwMRQ0xEo0U3zge0w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purse-bootcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purse-bootcoin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create bootcoin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTE3MDkyLCJleHAiOjE3Mzc1MTcyNzJ9.Nq6XkNwWzpmAlxT6Fm9Est66BTr5Cuddy-w4nu5dwRi7BzYbfdvffWaqRSKjQqPbFIm1fJttHEmg-FHxiFZH5Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"typeDocument\": \"DNI\",\n  \"numberDocument\": 12345678,\n  \"numberPhone\": \"+1234567890\",\n  \"imeiPhone\": 3434324,\n  \"email\": \"test@example.com\",\n  \"balance\": 10033.0,\n  \"numberAccount\": \"0ce588f2-6929-48b6-a508-3db35527717a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purse-bootcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purse-bootcoin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveUpdate Bootcoin",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTE3MTk0LCJleHAiOjE3Mzc1MTczNzR9.o7fI999BbAfh_9ZY_iFwJqq_6jfKZSQClshuyulkBcujkkwu1JQgfOLtr_NRkyPeP0qqmz1mD0PiQ9IUU6150g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"typeDocument\": \"DNI\",\n  \"numberDocument\": 12345678,\n  \"numberPhone\": \"+1234567890\",\n  \"imeiPhone\": 3434326,\n  \"email\": \"test@example.com\",\n  \"balance\": 10033.0,\n  \"numberAccount\": \"0ce588f2-6929-48b6-a508-3db35527717a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purse-bootcoin/2dc0a2f0-8124-467f-89ff-012d3c57bcd5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purse-bootcoin",
+						"2dc0a2f0-8124-467f-89ff-012d3c57bcd5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Bootcoin",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTE3MTk0LCJleHAiOjE3Mzc1MTczNzR9.o7fI999BbAfh_9ZY_iFwJqq_6jfKZSQClshuyulkBcujkkwu1JQgfOLtr_NRkyPeP0qqmz1mD0PiQ9IUU6150g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purse-bootcoin/2dc0a2f0-8124-467f-89ff-012d3c57bcd5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purse-bootcoin",
+						"2dc0a2f0-8124-467f-89ff-012d3c57bcd5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy BootCoin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTE3ODY0LCJleHAiOjE3Mzc1MTgwNDR9.EiOMbpsnRa_XIArAukAqwNPwNXkAuLWibFEvY7grK9AeP3MPDMRNHt5svci1PV02sF-9oeM5XULEIHdLxwKGew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"state\": \"pending\",\n  \"date\": \"2025-01-01T12:00:00Z\",\n  \"amount\": 50.0,\n  \"paymentMethod\": \"YANKI\",\n  \"numberPhone\": \"123456789\",\n  \"idPurseBuy\": \"e886e96a-80a1-4070-8900-ca5d964c0810\",\n  \"idPurseSeller\": \"e886e96a-80a1-4070-8900-ca5d964c0810\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purse-bootcoin/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purse-bootcoin",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Accep buy Bootcoin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XG4gIFwidXNlck5hbWVcIjogXCJhbGV4aXNcIlxufVxuIiwiaWF0IjoxNzM3NTE3NzMzLCJleHAiOjE3Mzc1MTc5MTN9.aFshONEVoCJcuZL8H-lK42ReyC8n960RsjKu8F-BXG1_aZbR0EwJgLKfHvIVPSdqFh6yuyf-yOIoq1uLM0uLGg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/purse-bootcoin/evaluate-decision?decision=ACCEPT&idPayment=a064605d-1dcb-4969-b5c3-80504271ba45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purse-bootcoin",
+						"evaluate-decision"
+					],
+					"query": [
+						{
+							"key": "decision",
+							"value": "ACCEPT"
+						},
+						{
+							"key": "idPayment",
+							"value": "a064605d-1dcb-4969-b5c3-80504271ba45"
 						}
 					]
 				}
